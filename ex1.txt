@@ -1,0 +1,29 @@
+ani@ani-pc:~/CProgramms/homework4$ gcc -E exer1.c -o exer1.i
+ani@ani-pc:~/CProgramms/homework4$ ./exer1
+bash: ./exer1: No such file or directory
+ani@ani-pc:~/CProgramms/homework4$ ./exer1.i
+bash: ./exer1.i: Permission denied
+ani@ani-pc:~/CProgramms/homework4$ gcc -S exer1.c -o exer1.s
+ani@ani-pc:~/CProgramms/homework4$ ./exer1.s
+bash: ./exer1.s: Permission denied
+ani@ani-pc:~/CProgramms/homework4$ gcc -S ex1.c -o ex1.s
+ani@ani-pc:~/CProgramms/homework4$ ./ex1.s
+bash: ./ex1.s: Permission denied
+ani@ani-pc:~/CProgramms/homework4$ gcc -c exer1.s -o exer1.c
+ani@ani-pc:~/CProgramms/homework4$ ./exer1.c
+bash: ./exer1.c: Permission denied
+ani@ani-pc:~/CProgramms/homework4$ gcc -c ex1.s -o ex1.c
+ani@ani-pc:~/CProgramms/homework4$ gcc -c exer1.s -o exer1.o
+ani@ani-pc:~/CProgramms/homework4$ gcc -c exer1.s -o exer1.o
+ani@ani-pc:~/CProgramms/homework4$ gcc exer1.o ex1.o -o program
+gcc: error: ex1.o: No such file or directory
+ani@ani-pc:~/CProgramms/homework4$ gcc -c exer1.s -o ex1.o
+ani@ani-pc:~/CProgramms/homework4$ gcc -c ex1.s -o ex1.o
+ani@ani-pc:~/CProgramms/homework4$ gcc -c exer1.s -o exer1.o
+ani@ani-pc:~/CProgramms/homework4$ gcc exer1.o ex1.o -o program
+ani@ani-pc:~/CProgramms/homework4$ ./program
+Enter first number: 4 
+Enter second number: 5
+Before swap: Num1 = 4, Num2 = 5
+After swap: Num1 = 5, Num2 = 4
+ani@ani-pc:~/CProgramms/homework4$ 
